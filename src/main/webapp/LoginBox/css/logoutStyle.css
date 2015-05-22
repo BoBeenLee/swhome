@@ -1,0 +1,25 @@
+@CHARSET "UTF-8";
+
+form.logoutBox {
+	width: 224px;
+	height: 85px;
+	background-color: #373737;
+}
+
+.logoutBox input[type="text"],.logoutBox input[type="password"] {
+	width: 100%;
+	height: 18px;
+	border: solid 1px #E5E5E5;
+	background: #FFFFFF;
+	display: inline-block;
+	font-size: 12px;
+}
+
+.logoutBox input[type="text"]:focus,.logoutBox input[type="password"]:focus
+	{
+	background: #feffef;
+}
+
+.tipped {
+	color: #BBB;
+}

@@ -1,0 +1,16 @@
+/* Form Style */
+#form_wrapper{
+	clear: both;
+	display: inline-block;
+/*	margin:0 auto; */
+	font-size:16px;
+}
+#form_wrapper a{
+	text-decoration:none;
+	color:#777;
+	font-size:12px;
+}
+#form_wrapper a:hover{
+	color:#000;
+}
+

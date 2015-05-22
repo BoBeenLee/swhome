@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE mapper
+  PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+  "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="data.dao.UserDAO">
+<!-- 
+	<resultMap id="StudentUserResult" type="StudentUser">
+		<result property="userId" column="userid" />
+		<result property="userPw" column="userpw" />
+		<result property="userTel" column="usertel" />
+		<result property="userEmail" column="useremail" />
+		<result property="question" column="question" />
+		<result property="answer" column="answer" />
+		<result property="codeId" column="codeid" />
+		<result property="userGrade" column="usergrade" />
+		<result property="lotteryPoint" column="lotterypoint" />
+		<result property="department" column="department" />
+		<result property="finishYear" column="finishyear" />
+		<result property="groupPw" column="grouppw" />
+		<result property="newMessage" column="newmessage" />
+	</resultMap>
+	<resultMap id="ProfessorUserResult" type="ProfessorUser">
+		<result property="userId" column="userid" />
+		<result property="userPw" column="userpw" />
+		<result property="userTel" column="usertel" />
+		<result property="userEmail" column="useremail" />
+		<result property="question" column="question" />
+		<result property="answer" column="answer" />
+		<result property="codeId" column="codeid" />
+		<result property="groupPw" column="grouppw" />
+		<result property="newMessage" column="newmessage" />
+		<result property="professorLocation" column="professorLocation"/>
+		<result property="extenstionTel" column="extenstiontel"/>
+	</resultMap>
+	<resultMap id="EmployeeUserResult" type="EmployeeUser">
+		<result property="userId" column="userid" />
+		<result property="userPw" column="userpw" />
+		<result property="userTel" column="usertel" />
+		<result property="userEmail" column="useremail" />
+		<result property="question" column="question" />
+		<result property="answer" column="answer" />
+		<result property="codeId" column="codeid" />
+		<result property="groupPw" column="grouppw" />
+		<result property="newMessage" column="newmessage" />
+		<result property="officeLocation" column="officeLocation"/>
+		<result property="extenstionTel" column="extenstiontel"/>
+	</resultMap>
+	<resultMap id="ManagerUserResult" type="ManagerUser">
+		<result property="userId" column="userid" />
+		<result property="userPw" column="userpw" />
+		<result property="userTel" column="usertel" />
+		<result property="userEmail" column="useremail" />
+		<result property="question" column="question" />
+		<result property="answer" column="answer" />
+		<result property="codeId" column="codeid" />
+		<result property="groupPw" column="grouppw" />
+		<result property="newMessage" column="newmessage" />
+	</resultMap>
+
+
+	<insert id="insertStudentUser" parameterType="StudentUser">
+		insert into usertable(userid, userpw, usertel, useremail, question,
+		answer, codeid, usergrade, lotterypoint, department, finishyear, grouppw, newmessage)
+		values(#{userId}, '#{userPw}', '#{userTel}', '#{userEmail}', '#{question}',
+		'#{answer}', #{codeId}, #{userGrade}, #{lotteryPoint}, '#{department}'
+		, #{finishYear}, '#{groupPw}', #{newMessage})
+	</insert>
+	<insert id="insertProfessorUser" parameterType="ProfessortUser">
+		insert into usertable(userid, userpw, usertel, useremail, question,
+		answer, codeid, grouppw, newmessage, professorlocation, extenstiontel)
+		values(#{userId}, '#{userPw}', '#{userTel}', '#{userEmail}', '#{question}',
+		'#{answer}', #{codeId}, '#{groupPw}', #{newMessage}, '#{professorLocation}', '#{extenstionTel}')
+	</insert>
+	<insert id="insertEmployeeUser" parameterType="EmployeeUser">
+		insert into usertable(userid, userpw, usertel, useremail, question,
+		answer, codeid, grouppw, newmessage, officelocation, extenstiontel)
+		values(#{userId}, '#{userPw}', '#{userTel}', '#{userEmail}', '#{question}',
+		'#{answer}', #{codeId}, '#{groupPw}', #{newMessage}, '#{officeLocation}', '#{extenstionTel}')
+	</insert>
+	<select id="selectUser" parameterType="int" resultType="User">
+		select userid, userpw, usertel, useremail, question,
+		answer, codeid, grouppw, newmessage
+		from usertable
+		where userid = #{userId}
+	</select>
+	<select id="selectStudentUser" parameterType="hashmap" resultType="StudentUser">
+		select userid, userpw, usertel, useremail, question,
+		answer, codeid, usergrade, lotterypoint, department, finishyear, grouppw, newmessage
+		from usertable
+		where userid = ${userId} and codeid = ${codeId} 
+	</select>
+	<select id="selectProfessorUser" parameterType="hashmap" resultType="ProfessorUser">
+		select userid, userpw, usertel, useremail, question,
+		answer, codeid, grouppw, newmessage, professorlocation, extenstiontel
+		from usertable
+		where userid = ${userId} and codeid = ${codeId} 
+	</select>
+	<select id="selectEmployeeUser" parameterType="hashmap" resultType="EmployeeUser">
+		select userid, userpw, usertel, useremail, question,
+		answer, codeid, grouppw, newmessage, officelocation, extenstiontel
+		from usertable
+		where userid = ${userId} and codeid = ${codeId} 
+	</select>
+-->
+</mapper>

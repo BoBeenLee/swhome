@@ -1,0 +1,47 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+		<title>Insert title here</title>
+	</head>
+	<link rel="stylesheet" href="Main/agile_carousel/agile_carousel.css" />
+	<style type="text/css">
+        /* content_up */
+        #mainPhoto {
+            margin: 5px 5px;
+            width: 990px;
+        }
+	</style>
+	<script type="text/javascript" src="Main/agile_carousel/agile_carousel.alpha.js"></script>
+	<script type="text/javascript">
+		jQuery(document).ready(function($) {
+			//alert("Hello");
+			$.getJSON("Main/agile_carousel/agile_carousel_data.js", function(data) {// content 이미지 change
+				$(document).ready(function() {
+					
+					$("#mainPhoto").agile_carousel({
+						carousel_data : data,
+						carousel_outer_height : 300,
+						carousel_height : 300,
+						slide_height : 300,
+						carousel_outer_width : 990,
+						slide_width : 990,
+						transition_time : 400,
+						timer : 4000,
+						continuous_scrolling : true,
+						control_set_1 : "numbered_buttons"
+					});
+				/*	$(".imgbutton").click(function(e) {
+						$(".imgbutton").css({'background-image': 'url(Main/img/buttondown.PNG)'});
+						$(this).css({'background-image': 'url(Main/img/buttonon.PNG)'});
+					}); 
+					*/
+				});
+			});
+		});
+
+	</script>
+	<body>
+		<div class="slideshow" id="mainPhoto"></div>
+	</body>
+</html>

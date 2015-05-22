@@ -1,0 +1,25 @@
+@CHARSET "UTF-8";
+
+h2 {
+	background: #bbb;
+	clear: both;
+	color: #fff;
+	font-size: 20px;
+	font-weight: bold;
+	margin: 0px 0 10px 0;
+	padding: 10px 20px;
+	text-shadow: -1px 1px 0px rgba(0,0,0,.2);
+}
+
+.title_left{
+	background: #000;
+	color: #fff;
+	font-size: 30px;
+	font-weight: bold;
+	width: 224px;
+	height: 80px;
+	line-height: 100px;
+	margin: 10px 0 0 0;
+	text-align: center;
+	text-shadow: -2px 2px 0px rgba(0,0,0,.2);
+}

@@ -1,0 +1,104 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <title>Insert title here</title>
+    </head>
+    <body>
+        <table align="center">
+            <tr>
+                <th scope="row"><label for="id">아이디</label></th>
+                <td>
+                <input type="text" name="id" id="id" title="아이디를 입력하세요" />
+                <br/>
+                사용자 ID는 6~20자 사이의 영문+숫자로 이루어져야 하며 영문으로 시작되어야 합니다 </td>
+            </tr>
+            <tr>
+                <th scope="row"><label for="name">이름</label></th>
+                <td>
+                <input type="text" name="name" id="name" maxlength="20" title="이름을 입력하세요" />
+                <br/>
+                이름은 2~20자 이내여야 합니다 </td>
+            </tr>
+            <tr>
+                <th scope="row"><label for="pwd1">비밀번호</label></th>
+                <td>
+                <input type="password" name="pwd1" id="pwd1" maxlength="20" title="비밀번호를 입력하세요" />
+                <br/>
+                비밀번호는 6~20자로 되어야 합니다 </td>
+            </tr>
+            <tr>
+                <th scope="row"><label for="pwd2">비밀번호 확인</label></th>
+                <td>
+                <input type="password" name="pwd2" id="pwd2" maxlength="20" title="비밀번호 확인을 입력하세요" style="ime-mode:inactive;" onblur="pwd_check(this)" />
+                </td>
+            </tr>
+            <tr>
+                <th scope="row"><label for="email">이메일 주소</label></th>
+                <td>
+                <input type="text" name="email" id="email" title="이메일 주소를 입력하세요" />
+                <br/>
+                메일주소는 메일인증 후 비밀번호 변경이나 찾기등에 사용됩니다. </td>
+            </tr>
+            <tr>
+                <th scope="row"><label for="phone">전화번호</label></th>
+                <td>
+                <input type="text" name="phone" id="phone" title="전화번호를 입력하세요" />
+                </td>
+            </tr>
+            <tr>
+                <th scope="row"><label for="question">질문</label></th>
+                <td>
+                <select id="question" name="question">
+                    <option value="1">Some text goes here</option>
+                    <option value="2">Another choice could be here</option>
+                    <option value="3">Yet another item to be chosen</option>
+                    <option value="4">Some text goes here</option>
+                    <option value="5">Another choice could be here</option>
+                    <option value="6">Yet another item to be chosen</option>
+                    <option value="7">Some text goes here</option>
+                    <option value="8">Another choice could be here</option>
+                    <option value="9">Yet another item to be chosen</option>
+                </select></td>
+            </tr>
+            <tr>
+                <th scope="row"><label for="answer">대답</label></th>
+                <td>
+                <input type="text" name="answer" id="answer" title="학년를 입력하세요" />
+                </td>
+            </tr>
+            <tr>
+                <th scope="row"><label for="location">교수실 위치</label></th>
+                <td>
+                <input type="text" name="location" id="location" title="교수실 위치를 입력하세요" />
+                </td>
+            </tr>
+            <tr>
+                <th scope="row"><label for="extenstion">외선 번호</label></th>
+                <td>
+                <input type="text" name="extenstion" id="extenstion" title="외선 번호를 입력하세요" />
+                </td>
+            </tr>
+            <tr>
+                <th scope="row"><label for="ability">학력사항</label></th>
+                <td>                <textarea rows="2" name="ability" id="ability" title="학력사항을 입력하세요" ></textarea></td>
+            </tr>
+            <tr>
+                <th scope="row"><label for="career">경력사항</label></th>
+                <td>                <textarea rows="2" name="career" id="career" title="경력사항을 입력하세요" ></textarea></td>
+            </tr>
+            <tr>
+                <th scope="row"><label for="position">외선 번호</label></th>
+                <td>
+                <input type="text" name="position" id="position" title="직위를 입력하세요" />
+                </td>
+            </tr>
+            <tr>
+                <th scope="row"><label for="grouppw">그룹 패스워드</label></th>
+                <td>
+                <input type="text" name="grouppw" id="grouppw" title="학과를 입력하세요" />
+                </td>
+            </tr>
+        </table>
+    </body>
+</html>

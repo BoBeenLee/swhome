@@ -1,0 +1,31 @@
+/* CSS Document */
+
+.message{
+	margin:10px auto;
+	width:50%;
+}
+
+.message table{
+	width:100%;
+	border-collapse: collapse;	
+}
+
+.message table th{
+	color: black;
+	border-top: 1px solid black;
+	border-bottom: 1px solid black;	
+	padding: 2px;
+	text-align:center;
+	font-size:12px;
+}
+
+.messageContent{
+	border-bottom: 1px solid black;
+	margin-bottom: 5px;
+}
+
+.messageContent p, textarea{
+	margin: 10px 0 15px 0;
+	padding: 0px;
+	color: #333;	
+}

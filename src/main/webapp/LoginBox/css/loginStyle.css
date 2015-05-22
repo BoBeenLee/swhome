@@ -1,0 +1,28 @@
+@CHARSET "UTF-8";
+
+
+form.loginBox{
+	width:224px;
+	height:85px;
+	background-color: #373737;
+}
+.loginBox .title{
+	font-size:16px;
+	width:100%;
+	height:30px;
+	color: white;
+	margin-left:10px;
+}
+.loginBox .square_box{
+	display:inline-block;
+	float: left;
+}
+.loginBox .square_box a{
+	display:inline-block;
+	width:65px;
+	height:30px;
+	/*border:1px solid black;*/
+	text-align:center;
+	line-height:40px;
+	margin-left:10px;
+}

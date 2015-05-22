@@ -1,0 +1,188 @@
+/* Date  */
+.box_calendar {
+	display: inline-block;
+	width: 180px;
+	margin-top: 10px;
+	float: left;
+}
+
+.ui-datepicker .ui-datepicker-header { position:relative; padding:.2em 0; color: #fff; }
+.ui-datepicker .ui-datepicker-prev, .ui-datepicker .ui-datepicker-next { position:absolute; top: 2px; width: 1.8em; height: 1.8em; }
+.ui-datepicker .ui-datepicker-prev-hover, .ui-datepicker .ui-datepicker-next-hover { 
+	background-color: #34ABFA;
+	cursor: pointer;
+}
+.ui-datepicker .ui-datepicker-prev { left:4px; }
+.ui-datepicker .ui-datepicker-next { right:4px; }
+.ui-datepicker .ui-datepicker-prev span, .ui-datepicker .ui-datepicker-next span { display: block; position: absolute; left: 50%; margin-left: -8px; top: 50%; margin-top: -8px;  }
+.ui-datepicker .ui-datepicker-title { margin: 0 2.3em; line-height: 1.8em; text-align: center; }
+.ui-datepicker .ui-datepicker-title select { font-size:1em; margin:1px 0; }
+
+.ui-datepicker-calendar th,ui-datepicker-calendar td {
+	padding: 3.5px;
+	text-align: center;
+}
+
+.ui-datepicker-calendar th {
+	font-weight: bold;
+	color: #fff;
+}
+
+.ui-datepicker-calendar td {
+	width: 40px;
+	text-align: center;
+	cursor: pointer;
+}
+
+.ui-datepicker-calendar td a {
+	display: block;
+	text-decoration: none;
+	color: #555 !important;
+}
+
+.ui-datepicker-calendar td a:hover {
+	background-color: #34ABFA;
+	cursor: pointer;
+}
+
+.ui-datepicker-calendar td a:active {
+	background-color: #cde;
+}
+
+.ui-datepicker-calendar td.selected {
+	font-weight: bold;
+	color: #bbb;
+}
+
+/* Interaction states
+----------------------------------*/
+#datepicker .ui-state-active {
+	background: #ffffff repeat-x;
+	font-weight: bold;
+	color: #212121;
+}
+
+
+/*  tabs   */
+.page-wrap {
+	display: inline-block;
+	width: auto;
+	height: 217px;
+	margin-left: 5px;
+	float: right;
+}
+
+/* Specific to example two */
+.list-result .list-wrap {
+	padding: 5px;
+}
+
+.list-result ul {
+	list-style: none;
+}
+
+.list-result .list-wrap ul li a {
+	display: block;
+	border-bottom: 1px solid #666;
+	padding: 5px;
+	color: #666;
+	text-decoration: none;
+}
+
+.list-result ul li a:hover {
+	color: white;
+}
+
+.list-result ul li:last-child a {
+	border: none;
+}
+
+.list-result .nav {
+	overflow: hidden;
+}
+
+.list-result .nav li {
+	float: left;
+}
+
+.list-result .nav li.last {
+	margin-right: 0;
+}
+
+.list-result .nav li a {
+	display: block;
+	width: auto;
+	height: auto;
+	display: block;
+	color: white;
+	font-size: 12px;
+	text-align: center;
+	border: 0;
+}
+
+.list-result li a.current,#list-result li a.current:hover {
+	background-color: #eee !important;
+	color: black;
+}
+
+.list-result .nav li a:hover,#list-result .nav li a:focus {
+	
+}
+
+/*!
+ * jQuery UI Tabs 1.8.20
+ *
+ * Copyright 2012, AUTHORS.txt (http://jqueryui.com/about)
+ * Dual licensed under the MIT or GPL Version 2 licenses.
+ * http://jquery.org/license
+ *
+ * http://docs.jquery.com/UI/Tabs#theming
+ */
+.ui-tabs {
+	position: relative;
+	zoom: 1;
+}
+/* position: relative prevents IE scroll bug (element with position: relative inside container with overflow: auto appear as "fixed") */
+.ui-tabs .ui-tabs-nav {
+	margin: 0;
+}
+
+.ui-tabs .ui-tabs-nav li {
+	list-style: none;
+	float: left;
+	position: relative;
+	top: 1px;
+	border-bottom: 0 !important;
+	padding: 0;
+	white-space: nowrap;
+}
+
+.ui-tabs .ui-tabs-nav li a {
+	float: left;
+	text-decoration: none;
+}
+
+.ui-tabs .ui-tabs-nav li.ui-tabs-selected {
+	margin-bottom: 0;
+	padding-bottom: 1px;
+}
+
+.ui-tabs .ui-tabs-nav li.ui-tabs-selected a,.ui-tabs .ui-tabs-nav li.ui-state-disabled a,.ui-tabs .ui-tabs-nav li.ui-state-processing a
+	{
+	cursor: pointer;
+}
+
+.ui-tabs .ui-tabs-nav li a,.ui-tabs.ui-tabs-collapsible .ui-tabs-nav li.ui-tabs-selected a
+	{
+	cursor: pointer;
+}
+/* first selector in group seems obsolete, but required to overcome bug in Opera applying cursor: text overall if defined elsewhere... */
+.ui-tabs .ui-tabs-panel {
+	display: block;
+	border-width: 0;
+	background: none;
+}
+
+.ui-tabs .ui-tabs-hide {
+	display: none !important;
+}

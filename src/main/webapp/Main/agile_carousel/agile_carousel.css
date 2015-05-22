@@ -1,0 +1,250 @@
+/* general styles */
+
+/* reset styles */
+
+.agile_carousel img {border: 0;}
+
+.agile_carousel p, .agile_carousel ul, .agile_carousel ul li {
+margin: 0;
+padding: 0;
+}
+
+/* agile carousel styles */
+
+/* -----------------------------------*/
+/*-- outer containers --*/
+/* -----------------------------------*/
+
+/*-- the most outer container rendered by JS 
+Contains .slides .slide_content_... .persistent_content and controls that have "no_control_set" --*/
+
+.agile_carousel {
+position: relative;
+overflow: hidden;
+font-family: Arial, Helvetica, sans-serif;
+font-size: 11px;
+margin:0px 0px 20px 0px;
+}
+
+/*-- container for all slides only --*/
+
+.agile_carousel .slides {
+position: absolute;
+top: 0;
+left: 0;
+}
+
+/*-- individual slide --*/
+
+.agile_carousel .slide {
+float: left;
+}
+
+/* -----------------------------------*/
+/*-- default style for controls --*/
+/* -----------------------------------*/
+
+
+/*-- default styles for all control sets --*/
+
+.agile_carousel .control_set {
+position: absolute;
+z-index: 4000;
+}
+
+/*-- default styles for all button containers --*/
+
+.agile_carousel .button_container {
+z-index: 5000;	
+}
+
+/*-- default style for controls whose trigger type is "hover" --*/
+
+.agile_carousel .ac_hover {
+cursor:text;	
+}
+
+/*-- default style for controls which are currently selected
+such as the current slide number --*/
+
+.agile_carousel .ac_selected {
+}
+
+/*-- default style for disabled controls 
+"previous" and "next" controls may be disabled near the first/last slide --*/
+
+.agile_carousel .ac_disabled {
+}
+
+/*-- style applied to all controls --*/
+
+.slide_button {
+z-index: 5000;
+cursor: pointer;
+display: block;
+background-position: 0 0;
+background-repeat: no-repeat;
+position: relative;
+}
+
+/*-- previous button --*/
+
+.previous_button {
+}
+
+/*-- next button --*/
+
+.next_button {
+}
+
+/*-- hover previous button --*/
+
+.hover_previous_button {
+}
+
+/*-- hover next button --*/
+
+.hover_next_button {
+}
+
+/*-- numbered buttons container --*/
+
+.agile_carousel .numbered_buttons_container {
+}
+
+/*-- numbered button --*/
+
+.agile_carousel .numbered_button {
+float: left;
+}
+
+/*-- grouped numbered buttons container --*/
+
+.agile_carousel .grouped_numbered_buttons_container {
+}
+
+/*-- group numbered button --*/
+
+.agile_carousel .grouped_numbered_button {
+float: left;
+}
+
+/*-- content buttons container --*/
+
+.agile_carousel .content_buttons_container {
+}
+
+/*-- content button --*/
+
+.agile_carousel .content_button {
+}
+
+/*-- thumbnail buttons container --*/
+
+.agile_carousel .thumbnail_buttons_container {
+}
+
+/*-- thumbnail button --*/
+
+.agile_carousel .thumbnail_button {
+}
+
+/* -------------------------------------------- */
+/*-- #mainPhoto styles --*/
+/* -------------------------------------------- */
+
+/*-- outer container --*/
+
+#mainPhoto .agile_carousel {
+overflow: hidden;
+-moz-box-shadow: 0px 0px 4px #dfdfdf; /* FF3.5+ */
+-webkit-box-shadow: 0px 0px 0px #dfdfdf; /* Saf3.0+, Chrome */
+box-shadow: 0px 0px 4px #dfdfdf; /* Opera 10.5, IE9, Chrome 10+ */
+}
+
+/*-- hide the captions --*/
+#mainPhoto .caption {
+display: none;
+}
+
+/*-- .control_set_1 - includes: numbered_buttons --*/
+
+#mainPhoto .control_set_1 {
+float: right;
+position: relative;
+margin: 6px 2px 0 0;
+}
+#mainPhoto .numbered_buttons_container {
+float: left;
+}
+#mainPhoto .control_set_1 .slide_button {
+float: left;
+}
+#mainPhoto .numbered_button { /* */
+height: 20px;
+width: 20px;
+top: 270px;
+right: 990px;
+background-image: url(Main/img/buttondown.PNG);
+}
+
+#mainPhoto .numbered_buttons_container .ac_selected, #mainPhoto .numbered_buttons_container .numbered_button:hover {
+height: 20px;
+width: 20px;
+/*background-image: url(Main/img/buttoon.PNG) !important;*/
+}
+
+/*-- "no control set" - includes: .hover_previous_button, .hover_next_button --*/
+
+.hover_previous_next_button {
+position: absolute;
+top: 30px;
+width: 90px;
+height: 150px;
+}
+.hover_previous_next_button .hover_previous_next_button_inner {
+position: absolute;
+top: 60px;
+background-color: #d9d9d9;
+opacity: 0.5;
+width: 54px;
+height: 35px;
+display: block;
+overflow: hidden;
+text-indent: 1000px;
+background-image: url(../images/sprite_ac_normal.png);
+background-repeat: no-repeat;
+}
+.hover_previous_button {
+left: 0px;
+}
+.hover_next_button {
+right: 0px;
+}
+.hover_previous_button .hover_previous_next_button_inner {
+left: 0px;
+-webkit-border-top-right-radius: 10px;
+-webkit-border-bottom-right-radius: 10px;
+-moz-border-radius-topright: 10px;
+-moz-border-radius-bottomright: 10px;
+border-top-right-radius: 10px;
+border-bottom-right-radius: 10px;
+background-position: -298px 8px;
+}
+.hover_next_button .hover_previous_next_button_inner {
+right: 0px;
+-webkit-border-top-left-radius: 10px;
+-webkit-border-bottom-left-radius: 10px;
+-moz-border-radius-topleft: 10px;
+-moz-border-radius-bottomleft: 10px;
+border-top-left-radius: 10px;
+border-bottom-left-radius: 10px;
+background-position: -351px 8px;
+}
+#mainPhoto .persistent_content {
+top: 100px;
+left: 10px;
+color: #ccc;
+position: absolute;
+z-index: 5000;
+}

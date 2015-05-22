@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<!DOCTYPE mapper
+  PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+  "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="data.dao.CalendarDAO">
+  <!-- <resultMap id="CalendarResult" type="SwCalendar">
+  	<result property="title" column="title"/>
+  	<result property="startDate" column="startdate"/>
+  	<result property="lastDate" column="lastdate"/>
+  </resultMap>
+  <select id="selectCalendar" parameterType="hashmap" resultType="SwCalendar">
+    select startdate, lastdate, title 
+    from calendar
+    where (lastdate between to_date('${sDate}', 'yyyy-mm-dd') and to_date('3000-01-01', 'yyyy-mm-dd')) and (startDate between to_date('1990-01-01', 'yyyy-mm-dd') and to_date('${lDate}', 'yyyy-mm-dd'))
+  </select>  -->
+</mapper>

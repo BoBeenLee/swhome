@@ -1,0 +1,83 @@
+/* CSS Document */
+
+@CHARSET "UTF-8";
+
+.bbs{
+	width:95%;
+	height: auto;
+	margin:5px auto;
+}
+
+.bbs table{
+	margin-top: 10px;
+	border-collapse: collapse;	
+}
+
+.bbs table th{
+	font-size: 12px;
+	color: black;
+	border-top: 1px solid black;
+	border-bottom: 1px solid black;
+	padding-top: 3px;
+	padding-bottom: 3px;	
+	text-align:center;
+}
+
+.bbs td{
+	padding-top: 3px;
+	padding-bottom: 3px;
+	border-bottom: 1px solid silver;	
+	text-align: center;
+}
+
+.bbs td a{
+	color: #555;
+	text-decoration: none;	
+}
+
+.bbs td a:hover{
+	color: #555;
+	text-decoration: underline;	
+}
+
+.bbs_list_num {
+	padding: 5px;
+	text-align: center;
+}
+.bbs_list_num a {
+	cursor:pointer;
+	font-weight: bold;
+	font-size:12px;
+}
+.bbs_list_num a:hover{
+	text-decoration: underline;	
+}
+
+
+#navigation {
+	width: 475px;
+	height: 40px;
+	margin: 10px auto;
+}
+
+#navigation li {
+	margin-left: 10px;
+	list-style-type:none;
+	float: left;
+}
+
+#navigation a {
+	color: #933;
+	font-weight: bolder;
+	text-decoration: none;
+}
+
+#professor_content ul {
+	position: relative;
+	margin: 0px 0px 0px 0px;
+	padding: 0px;
+}
+
+#professor_content,#professor_content li {
+	overflow: hidden;
+}

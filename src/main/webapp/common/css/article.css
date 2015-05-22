@@ -1,0 +1,94 @@
+/* CSS Document */
+
+@CHARSET "UTF-8";
+
+/* article */
+
+.article{
+	width: 95%;
+	height: auto;
+	margin:5px auto;
+}
+
+.article table{
+	width:100%;
+	border-collapse: collapse;	
+}
+
+.article table th{
+	color: black;
+	border-top: 1px solid black;
+	border-bottom: 1px black;	
+	padding: 2px;
+	text-align:center;
+	font-size:12px;
+}
+
+.articleContent{
+		border-bottom: 1px solid #ebebeb;
+}
+
+.articleContent p, textarea{
+	margin: 0 0 15px 0;
+	padding: 0;
+	color: #333;	
+}
+
+/* comment */
+
+/* 덧글과 덧글을 테두리로 구분 */
+.comment {
+	border-right: 1px solid #ebebeb;
+	border-left: 1px solid #ebebeb;
+	border-bottom: 1px solid #ebebeb;
+}
+
+/* 덧글 작성자 ID */
+.comment h4 {
+	float: left;
+	margin: 3px 3px 3px 3px;
+	padding: 0;
+	font-size: 12px;
+	color: #555;
+}
+
+/* 덧글 작성일 */
+.comment h5 {
+	float: left;
+	margin: 3px 3px 3px 3px;
+	padding: 0;
+	font-size: 12px;
+	font-weight: normal;
+	color: #555;
+}
+
+/* 덧글 수정|삭제 */
+.comment h6 {
+	float: right;
+	margin: 3px 3px 3px 3px;
+	padding: 0;
+	font-size: 12px;
+	font-weight: normal;
+	color: #555;
+}
+
+/* 덧글 수정|삭제 링크 */
+.comment a {
+	color: #555;
+	text-decoration: none;
+	font-size: 11px;
+}
+
+.comment a:hover {
+	color: #555;
+	text-decoration: underline;
+}
+
+/* 덧글 내용 */
+.comment p {
+	clear: both;
+	margin: 0;
+	padding: 0 3px 3px 3px;
+	color: #555;
+	font-size: 11px;
+}
